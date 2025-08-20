@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Skor CTO Kariadi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Skor CTO Kariadi</h1>
+        <div class="input-group">
+            <label for="bluntStump">Blunt Stump:</label>
+            <input type="number" id="bluntStump" value="0" min="0">
+        </div>
+        <div class="input-group">
+            <label for="kalsifikasi">Kalsifikasi:</label>
+            <input type="number" id="kalsifikasi" value="0" min="0">
+        </div>
+        <div class="input-group">
+            <label for="lesiPanjang">Lesi Panjang:</label>
+            <input type="number" id="lesiPanjang" value="0" min="0">
+        </div>
+        <div class="input-group">
+            <label for="bending">Bending:</label>
+            <input type="number" id="bending" value="0" min="0">
+        </div>
+        <div class="input-group">
+            <label for="derajatKolateral">Derajat Kolateral Retrograde <1:</label>
+            <input type="number" id="derajatKolateral" value="0" min="0">
+        </div>
+        <button onclick="hitungSkor()">Hitung Skor</button>
+        <div class="result-box">
+            <p>Total Skor: <span id="totalSkor">0</span></p>
+            <p>Persentase Keberhasilan: <span id="persentase">0%</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
